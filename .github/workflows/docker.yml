@@ -48,7 +48,7 @@ jobs:
       - name: elasticbeanstalk for releases
         if: ${{ github.event_name == 'release' }}
         run: |
-          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="prod-Dockerrun.aws.json" --version-label prod-${GITHUB_REF:15:6} --description "Release deploy"
+          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="prod-Dockerrun.aws.json" --version-label ${GITHUB_REF:15:6} --description "Release deploy"
           aws elasticbeanstalk update-environment --environment-name prod-mong-api --version-label ${GITHUB_REF:15:6}
       - name: elasticbeanstalk for master commits
         if: ${{ github.event_name == 'push' }}
