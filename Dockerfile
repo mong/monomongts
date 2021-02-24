@@ -2,13 +2,13 @@ FROM node:14.15-alpine as builder
 WORKDIR /app
 COPY package*.json ./
 COPY . .
-RUN yarn install
-RUN yarn run build
+RUN npm install
+RUN npm run build
 
 FROM node:14.15-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN yarn install --only=production
+RUN npm install --only=production
 COPY --from=builder /app/build ./build
 EXPOSE 80
 ENV NODE_ENV=production
