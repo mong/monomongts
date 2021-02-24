@@ -48,10 +48,10 @@ jobs:
       - name: elasticbeanstalk for releases
         if: ${{ github.event_name == 'release' }}
         run: |
-          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="prod-Dockerrun.aws.json" --version-label ${GITHUB_SHA:0:8} --description "Release deploy"
-          aws elasticbeanstalk update-environment --environment-name prod-mong-api --version-label ${GITHUB_SHA:0:8}
+          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="prod-Dockerrun.aws.json" --version-label prod-${GITHUB_REF} --description "Release deploy"
+          aws elasticbeanstalk update-environment --environment-name prod-mong-api --version-label ${GITHUB_REF}
       - name: elasticbeanstalk for master commits
         if: ${{ github.event_name == 'push' }}
         run: |
-          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="qa-Dockerrun.aws.json" --version-label ${GITHUB_SHA:0:8} --description "Master commits deploy"
-          aws elasticbeanstalk update-environment --environment-name qa-mong-api --version-label ${GITHUB_SHA:0:8}
+          aws elasticbeanstalk create-application-version --application-name mong-api --source-bundle S3Bucket="elasticbeanstalk-eu-west-1-247247832514",S3Key="qa-Dockerrun.aws.json" --version-label ${GITHUB_SHA:0:7} --description "Master commits deploy"
+          aws elasticbeanstalk update-environment --environment-name qa-mong-api --version-label ${GITHUB_SHA:0:7}
