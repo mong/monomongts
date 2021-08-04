@@ -53,7 +53,7 @@ export const medField: MedFieldInterface[] = [
     shortName: "muskel",
     name: "Muskel og skjelett",
     registers: [
-      "hofte_barn",
+      "barnehofte",
       "hoftebrudd",
       "korsband",
       "ryggkir",
@@ -95,22 +95,22 @@ export const medField: MedFieldInterface[] = [
     shortName: "rehab",
     name: "Rehabilitering",
     registers: ["nnrr", "norscir"],
-  } /*,
-  {  
-    shortName: "onh", 
-    name: "Øre-nese-hals",
-    registers: ["tonsille"]
   },
+  {
+    shortName: "onh",
+    name: "Øre-nese-hals",
+    registers: ["tonsille"],
+  } /*,
   {  
     shortName: "hud",
     name: "Hudsykdommer",
     registers: ["hisreg"]
-  },
-  {  
+  },*/,
+  {
     shortName: "psyk",
     name: "Psykisk helse og rus",
-    registers: ["kvarus","norspis"]
-  },*/,
+    registers: ["kvarus", "norspis"],
+  },
   /*  {
     shortName: "autoimmun",
     name: "Autoimmune sykdommer",
@@ -125,19 +125,16 @@ export const medField: MedFieldInterface[] = [
     name: "Barn",
     registers: [
       "cp",
-      "hofte_barn",
+      "barnehofte",
       "barnekreft",
       "barnediabetes",
       "lkg",
       "nnk",
     ],
-  } /*,
-  {  
+  },
+  {
     shortName: "annet",
     name: "Andre",
-    registers:[
-      "smerte",
-      "porfyri"
-    ]
-  }  */,
+    registers: ["smerte", "porfyri"],
+  },
 ];
