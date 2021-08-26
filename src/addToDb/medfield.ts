@@ -37,7 +37,7 @@ export const medField: MedFieldInterface[] = [
   {
     shortName: "luft",
     name: "Luftveier",
-    registers: ["mek_vent"]
+    registers: ["mek_vent"],
   },
   {
     shortName: "diabetes",
