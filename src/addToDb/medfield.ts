@@ -69,7 +69,7 @@ export const medField: MedFieldInterface[] = [
     name: "Mage og tarm",
     registers: [
       "gastronet",
-      "fedmekir",
+      "soreg",
       "nra",
       "norgast",
       "tarmkreft_colon",
