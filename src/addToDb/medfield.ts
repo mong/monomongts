@@ -26,6 +26,8 @@ export const medField: MedFieldInterface[] = [
       "barnekreft",
       "brystkreft",
       "gynkreft",
+      "livmorhalskreft",
+      "ovarialkreft",
       "lungekreft",
       "lymfoid",
       "melanom",
@@ -79,7 +81,7 @@ export const medField: MedFieldInterface[] = [
   {
     shortName: "gyn",
     name: "Gynekologi",
-    registers: ["nger", "nkir"],
+    registers: ["nger", "nkir", "livmorhalskreft", "ovarialkreft"],
   },
   {
     shortName: "nyre",
