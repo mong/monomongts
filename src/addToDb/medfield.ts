@@ -91,7 +91,7 @@ export const medField: MedFieldInterface[] = [
   {
     shortName: "intensiv",
     name: "Skade og intensiv",
-    registers: ["traume", "intensiv", "nnk"],
+    registers: ["traume", "intensiv", "pandemi", "nnk"],
   },
   {
     shortName: "rehab",
