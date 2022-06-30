@@ -16,5 +16,7 @@ const medField = (): Promise<MedFieldInterface[]> =>
     .from("registry_medfield as rmf")
     .leftJoin("medfield as mf", "rmf.medfield_id", "mf.id")
     .join("registry as r", "rmf.registry_id", "r.id")
-    .orderBy("mf.id");
+    .orderBy("mf.id")
+    .orderBy("r.id");
+
 export default medField;
