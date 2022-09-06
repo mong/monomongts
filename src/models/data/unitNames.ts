@@ -43,7 +43,7 @@ export const distinctUnitNamesRegister = (
     })
     .whereNot("unit_name", "LIKE", "Udefinerte%")
     .where("context", filter!.context ?? "")
-    .where("year", ">", 2016)
+    .where("year", ">", 2015)
     .modify(withFilter, filter);
 
 function withFilter(builder: Knex.QueryBuilder, filter?: Filter) {
