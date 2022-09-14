@@ -41,3 +41,19 @@ git merge qmongjs/monorepo
 ```
 
 4. Gjenta steg 2 og 3 for de andre tre repositories (`mong-api`, `mongts` og `hamongts`).
+
+### Oppdatere monorepo med endringer i original-repos
+
+Endringer som gjøres i de ulike repositories, før `monomongts` er i produksjon, kan enkelt legges inn på følgende måte
+
+```bash
+cd ../qmongjs
+git checkout monorepo
+git fetch origin main
+git merge main # forhåpentligvis ingen vanskelige konflikter
+cd ../monomongts
+git fetch qmongjs
+git merge qmongjs/monorepo # forhåpentligvis ingen vanskelige konflikter
+```
+
+Hvis det er opprettet nye filer vil disse dukke opp som konflikter, men enkelt å fikse med `git add . && git commit` (`git` vil foreslå å legge disse i riktig mappe under `apps/qmongjs`).
