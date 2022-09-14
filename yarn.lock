@@ -15444,7 +15444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.1":
+"husky@npm:8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:
@@ -17790,7 +17790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:13.0.3, lint-staged@npm:^13.0.3":
+"lint-staged@npm:13.0.3":
   version: 13.0.3
   resolution: "lint-staged@npm:13.0.3"
   dependencies:
@@ -19515,8 +19515,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "monomongts@workspace:."
   dependencies:
-    husky: ^8.0.1
-    lint-staged: ^13.0.3
+    husky: 8.0.1
+    lint-staged: 13.0.3
   languageName: unknown
   linkType: soft
 
