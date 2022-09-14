@@ -1,0 +1,45 @@
+{
+  "extends": "nx/presets/npm.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "dev",
+          "build",
+          "export",
+          "lint",
+          "prettier",
+          "format",
+          "cypress",
+          "cypress:headless",
+          "test",
+          "test:headless",
+          "check-format",
+          "check-types",
+          "validate",
+          "e2e",
+          "e2e:headless",
+          "test:base",
+          "test:once",
+          "test:once:watch",
+          "test:coverage",
+          "test:debug",
+          "test:staged",
+          "analyze",
+          "storybook",
+          "build-storybook",
+          "build-doc"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  }
+}
