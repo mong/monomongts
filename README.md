@@ -24,9 +24,9 @@ cd qmongjs
 # De neste stegene er allerede dyttet opp til de fire repositories
 git checkout -b monorepo
 mkdir -p apps/qmongjs
-# Flytter alt i repo over til apps/qmongjs-mappen, slik at alt legges der
-# det skal ved merge. Det finnes en penere måte, men fant den ikke i farten
-ls -a1 | grep -v ^apps | xargs -I{} git mv {} apps/qmongjs
+# Flytter (git mv) alt i repo opp til apps/qmongjs-mappen, slik at alt
+# alt innhold fra de ulike repositories legges i ulike mapper
+git ls-tree -z --name-only HEAD | xargs -0 -I {} git mv {} apps/qmongjs
 git add . && git commit -m "prep for monorepo"
 git push -u origin monorepo
 cd ..
