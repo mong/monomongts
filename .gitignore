@@ -10,4 +10,10 @@
 #!.yarn/cache
 .pnp.*
 
+.turbo
+
+build/**
+dist/**
+.out/**
+
 node_modules

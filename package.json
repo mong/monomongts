@@ -3,7 +3,11 @@
   "packageManager": "yarn@3.2.3",
   "scripts": {
     "postinstall": "husky install",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   },
   "workspaces": [
     "apps/*",
@@ -11,6 +15,7 @@
   ],
   "devDependencies": {
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "turbo": "^1.4.6"
   }
 }
