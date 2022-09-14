@@ -6,7 +6,7 @@ import { max, min } from "d3-array";
 type AnnualVariaionProps<Data, AnnualVar> = {
   data: Data;
   y: keyof Data;
-  annualVar: AnnualVar;
+  annualVar: [number];
   xScale: ScaleLinear<number, number, never>;
   colorFillScale: ScaleLinear<DefaultOutput, DefaultOutput, never>;
   sizeScale: ScaleLinear<number, number, never>;

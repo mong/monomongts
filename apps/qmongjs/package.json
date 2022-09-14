@@ -4,7 +4,7 @@
   "description": "The kvalitetsregistre page of www.skde.no",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "PORT=3005 react-scripts start",
     "build": "react-scripts build",
     "test": "is-ci test:coverage test:base",
     "test:base": "react-scripts test",
