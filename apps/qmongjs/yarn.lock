@@ -12786,15 +12786,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:8.0.1":
-  version: 8.0.1
-  resolution: "husky@npm:8.0.1"
-  bin:
-    husky: lib/bin.js
-  checksum: 943a73a13d0201318fd30e83d299bb81d866bd245b69e6277804c3b462638dc1921694cb94c2b8c920a4a187060f7d6058d3365152865406352e934c5fff70dc
-  languageName: node
-  linkType: hard
-
 "iconv-lite@npm:0.4.24, iconv-lite@npm:^0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -18592,7 +18583,6 @@ __metadata:
     d3: 7.6.1
     d3-format: 3.1.0
     eslint: 8.23.0
-    husky: 8.0.1
     is-ci-cli: 2.2.0
     lint-staged: 13.0.3
     msw: 0.47.0

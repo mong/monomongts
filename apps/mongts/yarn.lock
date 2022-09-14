@@ -4403,15 +4403,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:8.0.1":
-  version: 8.0.1
-  resolution: "husky@npm:8.0.1"
-  bin:
-    husky: lib/bin.js
-  checksum: 943a73a13d0201318fd30e83d299bb81d866bd245b69e6277804c3b462638dc1921694cb94c2b8c920a4a187060f7d6058d3365152865406352e934c5fff70dc
-  languageName: node
-  linkType: hard
-
 "ieee754@npm:^1.1.12, ieee754@npm:^1.1.13":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
@@ -6394,7 +6385,6 @@ __metadata:
     eslint: 8.23.0
     eslint-config-next: 12.3.0
     gray-matter: 4.0.3
-    husky: 8.0.1
     iframe-resizer-react: 1.1.0
     lint-staged: 13.0.3
     netlify-cms-app: 2.15.72
