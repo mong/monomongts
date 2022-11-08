@@ -6495,24 +6495,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.0.0":
-  version: 18.0.0
-  resolution: "@types/node@npm:18.0.0"
-  checksum: aab2b325727a2599f6d25ebe0dedf58c40fb66a51ce4ca9c0226ceb70fcda2d3afccdca29db5942eb48b158ee8585a274a1e3750c718bbd5399d7f41d62dfdcc
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:18.7.14":
-  version: 18.7.14
-  resolution: "@types/node@npm:18.7.14"
-  checksum: 99cf28ff854100158de875cca23c7acc3cc01dfee526a52b90b7f36767c821bcbaf2be0a98a70f06f3b78f3c60639168ff949d725b61e2e124f9f71f1fb8043d
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:18.7.6":
-  version: 18.7.6
-  resolution: "@types/node@npm:18.7.6"
-  checksum: 5122988c325eda8d1f5cbe4494916036aae1758f9d5bb2d8139a800b8bad1540fbb167cd3c759da9a5cb4600cd3507609ac7969747113c1549a3e4320a17b1a9
+"@types/node@npm:18.11.9":
+  version: 18.11.9
+  resolution: "@types/node@npm:18.11.9"
+  checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
   languageName: node
   linkType: hard
 
@@ -14552,7 +14538,7 @@ __metadata:
     "@sentry/tracing": 7.12.1
     "@types/d3-scale-chromatic": 3.0.0
     "@types/d3-shape": 3.1.0
-    "@types/node": 18.7.14
+    "@types/node": 18.11.9
     "@types/react": 18.0.18
     "@visx/axis": 2.12.2
     "@visx/group": 2.10.0
@@ -19488,7 +19474,7 @@ __metadata:
     "@mui/material": 5.10.4
     "@sentry/react": 7.12.1
     "@sentry/tracing": 7.12.1
-    "@types/node": 18.7.6
+    "@types/node": 18.11.9
     "@types/react": 18.0.19
     babel-plugin-istanbul: 6.1.1
     cypress: 10.7.0
@@ -22934,7 +22920,7 @@ __metadata:
     "@testing-library/user-event": 14.4.3
     "@types/d3": 7.4.0
     "@types/jest": 29.0.0
-    "@types/node": 18.0.0
+    "@types/node": 18.11.9
     "@types/react": 18.0.18
     "@types/react-dom": 18.0.6
     "@types/react-router-dom": 5.3.3
