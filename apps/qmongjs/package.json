@@ -93,7 +93,7 @@
     "eslint": "8.23.0",
     "is-ci-cli": "2.2.0",
     "lint-staged": "13.0.3",
-    "msw": "0.47.0",
+    "msw": "0.48.2",
     "prettier": "2.7.1",
     "typedoc": "0.23.14",
     "typescript": "4.8.2"
